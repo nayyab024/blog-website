@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Detail Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 0;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f0a500;
+    }
+
+    /* Main Container */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px 20px;
+    }
+
+    .main-content {
+      flex: 3;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .main-content img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .main-content h1 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .main-content p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .sidebar {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-height: fit-content;
+    }
+
+    .search-box {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px 35px 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+    }
+
+    .search-box i {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+    }
+
+    .next-blog {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .next-blog img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .next-blog h4 {
+      font-size: 16px;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .sidebar {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">MyBlog</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <!-- Left Main Blog Content -->
+    <div class="main-content">
+      <img src="img/agung-raharja-urbSCgUxfQ0-unsplash-800x385.jpg" alt="Main Blog Image">
+      <h1>Intel’s Iris Xe Graphics: Real Performance is coming to everyday laptop users</h1>
+      <p>What is the Intel Iris Xe capable of running?
+
+        The Intel Iris Xe is one of the most popular graphics processors available in late 2020 laptops due to its integration into Gen Intel Core i5 and i7 G7-series main processors. This configuration is ideal for playing the new slot games coming soon, allowing you to enjoy the best graphics and gaming experience available today!
+        
+        Iris Xe is the name given to the new integrated graphics built into the upper tier of Intel’s 11th generation laptop chips. The Iris Xe will be included in two of Intel’s latest processors — Core i5 and i7..</p>
+      <p>While you won’t be able to play your favorite AAA titles at 60 frames per second (fps), Iris Xe achieves very realistic playable frame rates for competitive multiplayer games like League of Legends and Rocket League.
+
+        Intel noted that these games were not running at maximum visual settings, but the “medium” settings were representative of real games running at full HD (1920 x 1080).
+        
+        If the enormous audiences that these games near the chart’s right can seamlessly play their games on razor-thin laptops, the Intel Iris Xe becomes a real game-changer. New audiences who perhaps can’t afford bona fide gaming laptops will have access to games like Valorant and Dota 2, opening up new possibilities for gamers and gaming companies alike.</p>
+      <p>Stay tuned for more tips and practical examples to become a front-end wizard!</p>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="sidebar">
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="text" placeholder="Search blog...">
+        <i class="fas fa-search"></i>
+      </div>
+
+      <!-- Next Blog Preview -->
+      <div class="next-blog">
+        <img src="img/laptop.jpg" alt="Next Blog">
+        <div>
+          <h4>Top 10 HTML Tips for Beginners</h4>
+        </div>
+      </div>
+      <br>
+
+      <div class="next-blog">
+        <img src="img/web.jpg" alt="Next Blog">
+        <div>
+          <h4>Top 10 HTML Tips for Beginners</h4>
+        </div>
+      </div>
+<br>
+      <div class="next-blog">
+        <img src="img/adobe-airport-laptop-800x385.jpg" alt="Next Blog">
+        <div>
+          <h4>Top 10 HTML Tips for Beginners</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
